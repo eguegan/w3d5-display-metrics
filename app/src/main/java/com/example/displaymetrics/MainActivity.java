@@ -15,13 +15,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Log.d(TAG, "onCreate: " + isTablet());
+
         Log.d(TAG, "onCreate: " + getWidthInDp());
-
-
-        DisplayMetrics diM = getResources().getDisplayMetrics();
-
-        Log.d(TAG, "onCreate: " + (diM.widthPixels * 160) / diM.density );
 
 
     }
@@ -32,6 +27,8 @@ public class MainActivity extends AppCompatActivity {
 
     private float getWidthInDp() {
         DisplayMetrics displayMetrics = getResources().getDisplayMetrics();
-        return displayMetrics.widthPixels / displayMetrics.density;
+        Log.d(TAG, "getWidthPixels: " + displayMetrics.widthPixels);
+        Log.d(TAG, "getWidthPixels: " + displayMetrics.density);
+        return (displayMetrics.widthPixels * 160) / displayMetrics.density;
     }
 }
