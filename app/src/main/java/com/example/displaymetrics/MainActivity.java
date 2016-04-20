@@ -17,6 +17,13 @@ public class MainActivity extends AppCompatActivity {
 
         Log.d(TAG, "onCreate: " + isTablet());
         Log.d(TAG, "onCreate: " + getWidthInDp());
+
+
+        DisplayMetrics diM = getResources().getDisplayMetrics();
+
+        Log.d(TAG, "onCreate: " + (diM.widthPixels * 160) / diM.density );
+
+
     }
 
     private boolean isTablet() {

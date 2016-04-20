@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/DisplayMetrics.iml" filepath="$PROJECT_DIR$/DisplayMetrics.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/w3d5-display-metrics.iml" filepath="$PROJECT_DIR$/w3d5-display-metrics.iml" />
     </modules>
   </component>
 </project>
